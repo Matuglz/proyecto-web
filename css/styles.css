@@ -2,14 +2,13 @@
   height: 50vh;
 }
 
-.img-w{
-  width: 260px;
-}
-
 .instagram{
   color: blueviolet;
 }
 
+#pantalla-samsung: checked ~ #productos .bateria .portasim .funda .apple .motorola{
+  display: none;
+}
 /*----------------------------------CURSO.HTML---------------------------------------*/
 /*
 
