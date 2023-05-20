@@ -1,13 +1,20 @@
-.c-item{
-  height: 50vh;
-}
-
-.instagram{
+ 
+.violeta{
   color: blueviolet;
 }
 
-#pantalla-samsung: checked ~ #productos .bateria .portasim .funda .apple .motorola{
-  display: none;
+.black{
+  color: black;
+}
+
+.carousel-caption{
+  background-color: rgba(220, 220, 220, 0.514);
+  border-radius: 3px;
+}
+
+.height{
+  height: 1000px;
+  object-fit: fill;
 }
 /*----------------------------------CURSO.HTML---------------------------------------*/
 /*
