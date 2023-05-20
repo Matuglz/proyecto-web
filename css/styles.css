@@ -12,10 +12,31 @@
   border-radius: 3px;
 }
 
-.height{
-  height: 1000px;
-  object-fit: fill;
+body{
+  background-color:#d8b570;
 }
+
+.card{
+  background-color:#E8D58B;
+}
+
+.button1{
+  background-color: #F8F4A6;
+}
+
+.button2{
+  background-color:#d8b570;
+}
+
+.monserrat{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.roboto{
+  font-family: 'Roboto', sans-serif;
+}
+
+
 /*----------------------------------CURSO.HTML---------------------------------------*/
 /*
 
