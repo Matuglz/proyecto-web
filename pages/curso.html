@@ -6,141 +6,604 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/53a5609ba1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="/index.html">
-            <h1>
-                TecnoStore
-            </h1>
-        </a>
-        <nav>
-            <ul class="list">
-                <li class="celulares"> <a href="/pages/celulares.html"> Celulares </a> </li>
-                <li class="tablets"> Tablets</li>
-                <li class="computadoras">Computadoras</li>
-                <li class="reparacion"> <a href="/pages/nosotros-reparamos.html"> ¡Nosotros lo reparamos! </a> </li>
-                <li class="como-comprar"> <a href="/pages/como-comprar.html"> Como comprar </a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="../index.html"><img src="../img/logo-sin-fondo.png" alt="Logo de tecnostore" class="Logo"></a>
+                <a class="navbar-brand" href="../index.html">
+                    <h1 class="roboto d-xl-none d-lg-none">
+                        TecnoStore</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-center d-xl-flex justify-content-xl-center"
+                    id="navbarNav">
+                    <ul class="navbar-nav roboto gap-xl-3">
+                        <li class="nav-item d-flex justify-content-center list-nav">
+                            <a class="nav-link" href="./celulares.html">Celulares</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center list-nav">
+                            <a class="nav-link">Tablets</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center list-nav">
+                            <a class="nav-link">Computadoras</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center list-nav">
+                            <a class="nav-link" href="./nosotros-reparamos.html">Nosotros reparamos</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center list-nav">
+                            <a class="nav-link" href="./como-comprar.html">Como comprar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="contenedor-cursos">
 
-            <div class="contenedor-titulos-curso">
-                 <div class="titulos">
-                    <h2>
-                        Multimarca
-                    </h2>
+        <!--------------------------------------------SECCION CURSOS--------------------------------------->
+        <section class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center ">
+                <div class="col text-center ">
+                    <div class="card">
+                        <img src="../img/principal.reparacion.jpg" class="card-img-top"
+                            alt="curso de reparacion de celulares">
+                        <div class="card-body">
+                            <h2 class="card-title roboto">Reparacion de celulares</h2>
+                            <p class="card-text montserrat">Aprende todo lo necesario para empezar a reparar celulares;
+                                como detectar fallas, como cambiar pantallas, pines de carga y mucho mas!</p>
+                            <p class="fs-3 montserrat">$25000</p>
+                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title fs-5 roboto" id="exampleModalToggleLabel">Reparacion
+                                                de
+                                                celulares</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text roboto"
+                                                    id="inputGroup-sizing-sm">Nombre</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm" placeholder="Tu nombre">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text roboto"
+                                                    id="inputGroup-sizing-sm">Apellido</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm" placeholder="Tu apellido">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text roboto"
+                                                    id="inputGroup-sizing-sm">Email</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm"
+                                                    placeholder="nombre@ejemplo.com">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <label class="input-group-text"
+                                                    for="inputGroupSelect01">Horarios</label>
+                                                <select class="form-select" id="inputGroupSelect01">
+                                                    <option value="1" class="montserrat">Lun y Mie 12:00hs-14:00hs desde
+                                                        29/05-28/06
+                                                    </option>
+                                                    <option value="2" class="montserrat">Mar y Jue 18:30hs-20:30hs desde
+                                                        30/05-29/06
+                                                    </option>
+                                                    <option value="3" class="montserrat">Sabado 10:00hs-14:00hs desde
+                                                        03/06-01/07</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-success roboto" data-bs-target="#exampleModalToggle2"
+                                                data-bs-toggle="modal">Checkout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title fs-5 roboto" id="exampleModalToggleLabel2">¡Ultimo
+                                                paso!
+                                            </h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body container">
+                                            <div class="input-group mb-3 ">
+                                                <span class="input-group-text roboto" id="inputGroup-sizing-sm">Nº
+                                                    Tarjeta</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm"
+                                                    placeholder="1234-5678-9123-4567">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text roboto" id="inputGroup-sizing-sm">Nombre
+                                                    titular</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm" placeholder="Tu nombre">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text roboto" id="inputGroup-sizing-sm">Fecha
+                                                    vencimiento</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm" placeholder="12/2030">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text roboto" id="inputGroup-sizing-sm">Codigo
+                                                    de
+                                                    seguridad</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm" placeholder="123">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary roboto"
+                                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Volver
+                                                atras</button>
+                                            <button class="btn btn-warning roboto" data-bs-target="#exampleModalToggle3"
+                                                data-bs-toggle="modal">Confirmar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModalToggle3" aria-labelledby="exampleModalToggleLabel2"
+                                tabindex="-1" style="display: none;" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body montserrat">
+                                            ¡LISTO! <br>
+                                            En el transcurso del dia te va a llegar un correo con tu identificacion y
+                                            demas detalles para empezar el curso, Felicidades por formar parte del mejor
+                                            grupo de tecnicos <br>
+                                            TECNOSTORE
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-dark button1 roboto" data-bs-target="#exampleModalToggle"
+                                data-bs-toggle="modal">¡Anotate ya!</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col text-center mt-3 mt-md-0">
+                    <div class="card">
+                        <img src="../img/manufactura-glass.jpeg" class="card-img-top"
+                            alt="curso de manufactura de pantallas">
+                        <div class="card-body">
+                            <h2 class="card-title roboto">Manufactura de pantallas</h2>
+                            <p class="card-text montserrat">¿Pantalla astillada? que no sea mas un problema, aprende a
+                                cambiar el glass de tus modulos y dales una segunda vida con pegamento oca!</p>
+                            <p class="fs-3 montserrat">$45000</p>
+                            <div class="modal fade" id="ml-manufactura" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title fs-5 roboto" id="exampleModalToggleLabel">Manufactura
+                                                de pantallas</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text roboto"
+                                                    id="inputGroup-sizing-sm">Nombre</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm" placeholder="Tu nombre">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text roboto"
+                                                    id="inputGroup-sizing-sm">Apellido</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm" placeholder="Tu apellido">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text roboto"
+                                                    id="inputGroup-sizing-sm">Email</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm"
+                                                    placeholder="nombre@ejemplo.com">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <label class="input-group-text"
+                                                    for="inputGroupSelect01">Horarios</label>
+                                                <select class="form-select" id="inputGroupSelect01">
+                                                    <option value="1" class="montserrat">Lun y Mie 14:00hs-16:00hs desde
+                                                        29/05-28/06
+                                                    </option>
+                                                    <option value="2" class="montserrat">Mar y Jue 20:30hs-22:30hs desde
+                                                        30/05-29/06
+                                                    </option>
+                                                    <option value="3" class="montserrat">Sabado 14:00hs-18:00hs desde
+                                                        03/06-01/07</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-success roboto" data-bs-target="#ml-manufactura2"
+                                                data-bs-toggle="modal">Checkout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="ml-manufactura2" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title fs-5 roboto" id="exampleModalToggleLabel2">¡Ultimo
+                                                paso!
+                                            </h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body container">
+                                            <div class="input-group mb-3 ">
+                                                <span class="input-group-text roboto" id="inputGroup-sizing-sm">Nº
+                                                    Tarjeta</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm"
+                                                    placeholder="1234-5678-9123-4567">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text roboto" id="inputGroup-sizing-sm">Nombre
+                                                    titular</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm" placeholder="Tu nombre">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text roboto" id="inputGroup-sizing-sm">Fecha
+                                                    vencimiento</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm" placeholder="12/2030">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text roboto" id="inputGroup-sizing-sm">Codigo
+                                                    de
+                                                    seguridad</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm" placeholder="123">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary roboto" data-bs-target="#ml-manufactura"
+                                                data-bs-toggle="modal">Volver
+                                                atras</button>
+                                            <button class="btn btn-warning roboto" data-bs-target="#ml-manufactura3"
+                                                data-bs-toggle="modal">Confirmar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="ml-manufactura3" aria-labelledby="exampleModalToggleLabel2"
+                                tabindex="-1" style="display: none;" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body montserrat">
+                                            ¡LISTO! <br>
+                                            En el transcurso del dia te va a llegar un correo con tu identificacion y
+                                            demas detalles para empezar el curso, Felicidades por formar parte del mejor
+                                            grupo de tecnicos <br>
+                                            TECNOSTORE
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-dark button1 roboto" data-bs-target="#ml-manufactura"
+                                data-bs-toggle="modal">¡Anotate ya!</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col text-center mt-3 mt-lg-0">
+                    <div class="card">
+                        <img src="../img/curso3.jpg" class="card-img-top" alt="curso de microelectronica">
+                        <div class="card-body">
+                            <h2 class="card-title roboto">Microelectronica y Diagramas</h2>
+                            <p class="card-text montserrat">Capacitate en la reparacion de placas y circuitos, aprende a
+                                interpretar diagramas y esquematicos, hacer jumpers y leer mediciones de voltajes!</p>
+                            <p class="fs-3 montserrat">$32000</p>
+                            <div class="modal fade" id="ml-microelectronica" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title fs-5 roboto" id="ml-microelectronica">
+                                                Microelectronica
+                                            </h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text roboto"
+                                                    id="inputGroup-sizing-sm">Nombre</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm" placeholder="Tu nombre">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text roboto"
+                                                    id="inputGroup-sizing-sm">Apellido</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm" placeholder="Tu apellido">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text roboto"
+                                                    id="inputGroup-sizing-sm">Email</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm"
+                                                    placeholder="nombre@ejemplo.com">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <label class="input-group-text"
+                                                    for="inputGroupSelect01">Horarios</label>
+                                                <select class="form-select" id="inputGroupSelect01">
+                                                    <option value="1" class="montserrat">Lun y Mie 10:00hs-12:00hs desde
+                                                        29/05-28/06
+                                                    </option>
+                                                    <option value="2" class="montserrat">Mar y Jue 14:30hs-18:30hs desde
+                                                        30/05-29/06
+                                                    </option>
+                                                    <option value="3" class="montserrat">Sabado 08:00hs-10:00hs desde
+                                                        03/06-01/07</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-success roboto"
+                                                data-bs-target="#ml-microelectronica2"
+                                                data-bs-toggle="modal">Checkout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="ml-microelectronica2" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title fs-5 roboto" id="exampleModalToggleLabel2">¡Ultimo
+                                                paso!
+                                            </h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body container">
+                                            <div class="input-group mb-3 ">
+                                                <span class="input-group-text roboto" id="inputGroup-sizing-sm">Nº
+                                                    Tarjeta</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm"
+                                                    placeholder="1234-5678-9123-4567">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text roboto" id="inputGroup-sizing-sm">Nombre
+                                                    titular</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm" placeholder="Tu nombre">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text roboto" id="inputGroup-sizing-sm">Fecha
+                                                    vencimiento</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm" placeholder="12/2030">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text roboto" id="inputGroup-sizing-sm">Codigo
+                                                    de
+                                                    seguridad</span>
+                                                <input type="text" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-sm" placeholder="123">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-secondary roboto"
+                                                data-bs-target="#ml-microelectronica" data-bs-toggle="modal">Volver
+                                                atras</button>
+                                            <button class="btn btn-warning roboto"
+                                                data-bs-target="#ml-microelectronica3"
+                                                data-bs-toggle="modal">Confirmar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="ml-microelectronica3" aria-labelledby="exampleModalToggleLabel2"
+                                tabindex="-1" style="display: none;" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body montserrat">
+                                            <p>¡LISTO!</p>
+                                            <p>Felicidades por unirte al nuestro curso de microelectronica </p>
+                                            En el transcurso del dia te va a llegar un correo con tu identificacion y
+                                            demas detalles para empezar el curso, Ya formas parte del mejor
+                                            grupo de tecnicos <br>
+                                            TECNOSTORE
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-dark button1 roboto" data-bs-target="#ml-microelectronica"
+                                data-bs-toggle="modal">¡Anotate ya!</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="contenedor-parrafo-curso">
-                <div class="parrafos">
-                    <p>
-                        PARRAFO MULTIMARCA
-                    </p>
-                </div>
             </div>
-
-            <div class="contenedor-parrafo-curso">
-                <div class="parrafos">
-                    <P>
-                        PARRAFO Microelectronica
-                    </P>
-                </div>
             </div>
-
-            <div class="contenedor-titulos-curso">
-                <div>
-                    <h2 class="titulos">
-                        Microelectronica
-                    </h2>
-                </div>
             </div>
-
-            <div class="contenedor-titulos-curso">
-                <div class="titulos">
-                    <h2>Mediciones y esquematicos</h2>
-                </div>
-            </div>
-
-            <div class="contenedor-parrafo-curso">
-                <div class="parrafos">
-                    <p>
-                        PARRAFO MEDICIONES
-                    </p>
-                </div>
             </div>
 
         </section>
 
+        <!-----------------------------------------SECCION NUESTRO LABORATORIO---------------------------->
+
+<hr>
         <section>
-            <div class="beneficios">
-                <h2>beneficios de estudiar con nosotros</h2>
-                <div class="text-beneficios">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic reprehenderit minus cum doloremque,
-                    sit incidunt veniam? Nisi error perspiciatis rerum fuga? Molestias fugiat sapiente quod animi cumque
-                    dolorem magnam tenetur!
+
+            <h2 class="d-flex justify-content-center mt-5">¿Como es nuestro laboratorio?</h2>
+            <div id="carouselExampleSlidesOnly" class="carousel slide p-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active alto">
+                        <img src="../img/taller1.jpg" class="d-block w-100" alt="como es el taller">
+                        <div class="carousel-caption bg-carousel black mb-xl-5">
+                            <p class="fw-bold montserrat fs">las mejores herramientas para que no tengas ningun problema a la hora
+                                de aprender, tambien contamos con estaciones individuales por lo que no vas a tener que
+                                compartir tus herramientas</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item alto">
+                        <img src="../img/taller-laminadora.png" class="d-block w-100" alt="laminadora mag-xxl3">
+                        <div class="carousel-caption bg-carousel black mb-xl-5">
+                            <p class="fw-bold montserrat fs">La mejor laminadora del mercado, la MAG-XXL3 a tu disposicion, la
+                                misma cuenta con separadora de glass en caliente o frio, marcos universales para que
+                                alinees bien tus pantallas y autoclave para sacar todas las burbujas del laminado.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item alto">
+                        <img src="../img/taller3-esquematico.png" class="d-block w-100"
+                            alt="dzkj tools, el programa que usamos para microelectronica">
+                        <div class="carousel-caption bg-carousel black mb-xl-5">
+                            <p class="fw-bold montserrat fs">Contamos con el programa DZKJ TOOLS el mismo trae todos los
+                                esquematicos del mercado actualizados semanalmente por lo que aprender como se soluciona
+                                un problema de microelectronica nunca fue tan facil!</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-
-            <div>
-                <h2 class="horarios-fechas">
-                    Horarios y Fechas
-                </h2>
-                <div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quod molestias, nisi obcaecati
-                        magnam reprehenderit ducimus praesentium porro necessitatibus consequuntur, minima recusandae,
-                        veritatis delectus? Delectus ipsum facere id fugiat esse!
-                    </p>
-                </div>
-            </div>
-
-
-            <div>
-                <h2>
-                    Laboratorio
-                </h2>
-                <div>
-                    <img src="" alt="">
-                </div>
-            </div>
         </section>
-
     </main>
 
+    <hr>
 
     <footer>
-        <div>
-            <h4 class="contacto"> Contacto </h4>
-            <ul class="contact-list">
-                <li class="whatsapp"> <a href="https://chat.whatsapp.com/CDgI7VHGpdYJ4TPB4vObwj" target="_blank">
-                        Whatsapp </a></li>
-                <li class="facebook"> <a href="https://www.facebook.com/TecnoStoreFans/?locale=es_LA" target="_blank">
-                        Facebook </a> </li>
-                <li class="instagram"> <a href="https://www.instagram.com/tecnostorearg/?hl=es" target="_blank">
-                        Instagram </a> </li>
-            </ul>
-        </div>
-        <div class="seguinos">Seguinos en nuestras redes sociales para estar <br>
-            al dia con todas nuestras ofertas!!!
+        <section class=" d-xl-none">
+            <div class="dropdown container">
+                <button class="btn roboto button1 dropdown-toggle col-12 mt-5" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"><i class="fa-solid fa-phone"></i>
+                    Contacto
+                </button>
+                <ul class="dropdown-menu col-10">
+                    <li><a class="dropdown-item d-flex justify-content-center align-items-center text-success"
+                            href="https://chat.whatsapp.com/CDgI7VHGpdYJ4TPB4vObwj" target="_blank"><i
+                                class="fa-brands fa-whatsapp"></i>Whatsapp</a></li>
+                    <li><a class="dropdown-item d-flex justify-content-center align-items-center text-primary"
+                            href="https://www.facebook.com/TecnoStoreFans/?locale=es_LA" target="_blank"><i
+                                class="fa-brands fa-facebook"></i>Facebook</a></li>
+                    <li><a class="dropdown-item d-flex justify-content-center align-items-center violeta"
+                            href="https://www.instagram.com/tecnostorearg/?hl=es" target="_blank"><i
+                                class="fa-brands fa-instagram"></i>Instagram</a></li>
+                </ul>
+            </div>
+
+        </section>
+
+
+
+        <div class="container_fluid d-xl-none">
+            <iframe class="maps mt-5 col-12"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9543130300544!2d-58.47834262477279!3d-34.58002255624634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb66de733e8d7%3A0xf75ad5afdb424583!2sTecnoStore!5e0!3m2!1ses!2sar!4v1682092455014!5m2!1ses!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="maps">
+
+
+        <div
+            class="d-none d-sm-none d-lg-none d-md-none d-xl-flex justify-content-xl-around mt-xl-5 align-items-xl-center">
+            <section>
+                <h2 class="fs-1 roboto">Contacto</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="button2 list-group-item d-xl-flex justify-content-xl-center align-items-xl-center"><a
+                            class="dropdown-item d-flex justify-content-center align-items-center text-success"
+                            href="https://chat.whatsapp.com/CDgI7VHGpdYJ4TPB4vObwj" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>Whatsapp</a></li>
+                    <li class="button2 list-group-item d-xl-flex justify-content-xl-center align-items-xl-center"><a
+                            class="dropdown-item d-flex justify-content-center align-items-center text-primary"
+                            href="https://www.facebook.com/TecnoStoreFans/?locale=es_LA" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                    <li class="button2 list-group-item d-xl-flex justify-content-xl-center align-items-xl-center"><a
+                            class="dropdown-item d-flex justify-content-center align-items-center violeta"
+                            href="https://www.instagram.com/tecnostorearg/?hl=es" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                </ul>
+            </section>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9543130300544!2d-58.47834262477279!3d-34.58002255624634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb66de733e8d7%3A0xf75ad5afdb424583!2sTecnoStore!5e0!3m2!1ses!2sar!4v1682092455014!5m2!1ses!2sar"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.954313030074!2d-58.47834262500558!3d-34.58002255624585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb66de733e8d7%3A0xf75ad5afdb424583!2sTecnoStore!5e0!3m2!1ses!2sar!4v1684099207453!5m2!1ses!2sar"
                 width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>
+
+    <hr>
+
+    <p class=" mt-5 d-flex justify-content-center">Pagina diseñada para el curso de desarrollo web de CoderHouse </p>
+    <p class="d-flex justify-content-center"> Derechos de autor a Matias Gonzalez</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
+
 
 </html>
