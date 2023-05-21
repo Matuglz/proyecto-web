@@ -28,7 +28,7 @@ body{
   background-color:#d8b570;
 }
 
-.monserrat{
+.montserrat{
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -36,7 +36,15 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+@media (min-width:992px){
+  .list-nav{
+  background-color:#F8F4A6;
+  border-radius: 5px;
+}}
 
+@media (min-width:992px){
+  .alto{ height: 450px;
+}}
 /*----------------------------------CURSO.HTML---------------------------------------*/
 /*
 
