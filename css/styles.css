@@ -29,7 +29,7 @@ body{
 }
 
 .bg-carousel{
-  background-color:#e8d58ba9;
+  background-color:#fffffecc;
 }
 
 .montserrat{
@@ -43,15 +43,12 @@ body{
 @media (min-width:992px){
   .list-nav{
   background-color:#F8F4A6;
-  border-radius: 5px;
-}}
+  border-radius: 5px;}
+.alto{ height: 450px;}
+.fs{font-size: 2rem;}
+}
 
-@media (min-width:992px){
-  .alto{ height: 450px;
-}}
-
-@media (min-width:992px){
-  .fs{
-    font-size: 2rem;
-  }
+@media (max-width:400px){
+  .fs-chico{font-size: 0.8rem;}
+  .fs-chico2{font-size: 0.6rem;}
 }
