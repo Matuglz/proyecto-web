@@ -6,30 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/53a5609ba1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Roboto+Slab&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="/index.html">
-            <h1>
-               
-                TecnoStore
-                
-            </h1>
-        </a>
-        <nav>
-            <ul class="list">
-                <li class="celulares"> <a href="/pages/celulares.html"> Celulares </a> </li>
-                <li class="tablets"> Tablets</li>
-                <li class="computadoras">Computadoras</li>
-                <li class="reparacion"><a href="/pages/nosotros-reparamos.html"> ¡Nosotros lo reparamos! </a></li>
-                <li class="como-comprar"> <a href="/pages/como-comprar.html"> Como comprar </a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="../index.html"><img src="../img/logo-sin-fondo.png" alt="Logo de tecnostore" class="Logo"></a>
+                <a class="navbar-brand" href="../index.html">
+                    <h1 class="roboto d-xl-none d-lg-none">
+                        TecnoStore</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-center d-xl-flex justify-content-xl-center"
+                    id="navbarNav">
+                    <ul class="navbar-nav roboto gap-lg-3">
+                        <li class="nav-item d-flex justify-content-center list-nav">
+                            <a class="nav-link" href="./celulares.html">Celulares</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center list-nav">
+                            <a class="nav-link">Tablets</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center list-nav">
+                            <a class="nav-link">Computadoras</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center list-nav">
+                            <a class="nav-link" href="./nosotros-reparamos.html">Nosotros reparamos</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center list-nav">
+                            <a class="nav-link" href="./como-comprar.html">Como comprar</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center list-nav d-lg-none">
+                            <a class="nav-link"><button type="button" class="me-4 btn button1 btn-outline-dark position-relative">
+                              <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                              <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                              </span>
+                            </button></a>
+                          </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="me-4 btn button1 btn-outline-dark position-relative d-none d-lg-block">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                </span>
+              </button>
         </nav>
     </header>
     <main>
@@ -55,7 +87,7 @@
                         producto a nuestro local, quedan a cargo del comprador.
                     </p>
                 </div>
-                <h4 class="condiciones-garantia">Condiciones de garantía</h4>
+                <h3 class="condiciones-garantia">Condiciones de garantía</h3>
                 <div class="parrafo-condiciones">
                     <p>
                         Los táctiles y displays debe conservar los films y pegamentos sin usar, su funcionamiento se
@@ -71,27 +103,72 @@
 
 
     <footer>
-        <div>
-            <div class="titulo-contacto">
-                <h4 class="contacto"> Contacto </h4>
-            </div>
-            <ul class="contact-list">
-                <li class="whatsapp"> <a href="https://chat.whatsapp.com/CDgI7VHGpdYJ4TPB4vObwj" target="_blank"> Whatsapp </a></li>
-                <li class="facebook"> <a href="https://www.facebook.com/TecnoStoreFans/?locale=es_LA" target="_blank"> Facebook </a></li>
-                <li class="instagram"> <a href="https://www.instagram.com/tecnostorearg/?hl=es" target="_blank"> Instagram </a> </li>
+        <section class=" d-xl-none">
+          <div class="dropdown container">
+            <button class="btn button1 roboto dropdown-toggle col-12 mt-5" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false"><i class="fa-solid fa-phone"></i>
+              Contacto
+            </button>
+            <ul class="dropdown-menu col-10">
+              <li><a class="montserrat dropdown-item d-flex justify-content-center align-items-center text-success"
+                  href="https://chat.whatsapp.com/CDgI7VHGpdYJ4TPB4vObwj" target="_blank"><i
+                    class="fa-brands fa-whatsapp"></i>Whatsapp</a></li>
+              <li><a class="montserrat dropdown-item d-flex justify-content-center align-items-center text-primary"
+                  href="https://www.facebook.com/TecnoStoreFans/?locale=es_LA" target="_blank"><i
+                    class="fa-brands fa-facebook"></i>Facebook</a></li>
+              <li><a class="montserrat dropdown-item d-flex justify-content-center align-items-center violeta"
+                  href="https://www.instagram.com/tecnostorearg/?hl=es" target="_blank"><i
+                    class="fa-brands fa-instagram"></i>Instagram</a></li>
             </ul>
+          </div>
+    
+        </section>
+        <div class="container_fluid d-xl-none">
+          <iframe class="maps mt-5 col-12"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9543130300544!2d-58.47834262477279!3d-34.58002255624634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb66de733e8d7%3A0xf75ad5afdb424583!2sTecnoStore!5e0!3m2!1ses!2sar!4v1682092455014!5m2!1ses!2sar"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="seguinos">Seguinos en nuestras redes sociales para estar <br>
-            al dia con todas nuestras ofertas!!!
+    
+    
+        <hr>
+        <div class="d-none d-xl-flex justify-content-xl-around mt-5 align-items-xl-center">
+          <section>
+            <h3 class="fs-1 roboto">Contacto</h3>
+            <ul class="list-group list-group-flush ">
+              <li
+                class="button2 montserrat list-group-item d-xl-flex justify-content-xl-center align-items-xl-center text-success">
+                <a class="dropdown-item d-flex justify-content-center align-items-center text-success"
+                  href="https://chat.whatsapp.com/CDgI7VHGpdYJ4TPB4vObwj" target="_blank"><i
+                    class="fa-brands fa-whatsapp"></i>Whatsapp </a>
+              </li>
+              <li
+                class="button2 montserrat list-group-item d-xl-flex justify-content-xl-center align-items-xl-center text-primary">
+                <a class="dropdown-item d-flex justify-content-center align-items-center text-primary"
+                  href="https://www.facebook.com/TecnoStoreFans/?locale=es_LA" target="_blank"><i
+                    class="fa-brands fa-facebook"></i>Facebook </a>
+              </li>
+              <li
+                class="button2 montserrat list-group-item d-xl-flex justify-content-xl-center align-items-xl-center violeta">
+                <a class="dropdown-item d-flex justify-content-center align-items-center violeta"
+                  href="https://www.instagram.com/tecnostorearg/?hl=es" target="_blank"><i
+                    class="fa-brands fa-instagram"></i>Instagram </a>
+              </li>
+            </ul>
+          </section>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.954313030074!2d-58.47834262500558!3d-34.58002255624585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb66de733e8d7%3A0xf75ad5afdb424583!2sTecnoStore!5e0!3m2!1ses!2sar!4v1684099207453!5m2!1ses!2sar"
+            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
-        <div class="maps">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9543130300544!2d-58.47834262477279!3d-34.58002255624634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb66de733e8d7%3A0xf75ad5afdb424583!2sTecnoStore!5e0!3m2!1ses!2sar!4v1682092455014!5m2!1ses!2sar"
-                width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </footer>
-</body>
+      </footer>
+      <hr>
+      <p class=" mt-5 d-flex justify-content-center">Pagina diseñada para el curso de desarrollo web de CoderHouse </p>
+      <p class="d-flex justify-content-center"> Derechos de autor a Matias Gonzalez</p>
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    </body>
 
 </html>

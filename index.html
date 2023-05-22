@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="./css/styles.css">
   <script src="https://kit.fontawesome.com/53a5609ba1.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -49,10 +49,11 @@
             </li>
             <li class="nav-item d-flex justify-content-center list-nav d-lg-none">
               <a class="nav-link"><button type="button" class="me-4 btn button1 btn-outline-dark position-relative">
-                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-                </span>
-              </button></a>
+                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                  </span>
+                </button></a>
             </li>
 
           </ul>
@@ -61,7 +62,8 @@
 
       <button type="button" class="me-4 btn button1 btn-outline-dark position-relative d-none d-lg-block">
         <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+        <span
+          class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
         </span>
       </button>
     </nav>
@@ -86,65 +88,181 @@
             <a class="btn btn-outline-dark button1" href="./pages/curso.html">¡Anotate ya!</a>
           </div>
         </div>
-          <div class="carousel-item alto">
-            <img src="./img/manufactura-glass.jpeg" class="d-block w-100" alt="curso de manufactura de pantallas">
-            <div class="carousel-caption bg-carousel black mb-xl-5">
-              <h2 class="roboto fs-chico">Manufactura de Pantallas</h2>
-              <p class="montserrat fs-chico2">Repara esa pantalla astillada en vez de cambiarla</p>
-              <a class="btn btn-outline-dark button1" href="./pages/curso.html">¡Anotate ya!</a>
-            </div>
+        <div class="carousel-item alto">
+          <img src="./img/manufactura-glass.jpeg" class="d-block w-100" alt="curso de manufactura de pantallas">
+          <div class="carousel-caption bg-carousel black mb-xl-5">
+            <h2 class="roboto fs-chico">Manufactura de Pantallas</h2>
+            <p class="montserrat fs-chico2">Repara esa pantalla astillada en vez de cambiarla</p>
+            <a class="btn btn-outline-dark button1" href="./pages/curso.html">¡Anotate ya!</a>
           </div>
         </div>
+      </div>
 
-        <div class="container">
-          <h3 class=" fs-1 roboto d-flex justify-content-center m-4">Ofertas</h3>
+      <div class="container">
+        <h3 class=" fs-1 roboto d-flex justify-content-center m-4">Ofertas</h3>
 
-          <section class="row justify-content-center ">
+        <section class="row justify-content-center">
 
 
-            <div class="card mt-2 col-12 align-items-center col-md-6 col-xl-3 ">
-              <img src="./img/modulo-j7.png" class="card-img-top card-img-height" alt="repuesto modulo j7 prime">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h4 class="card-title roboto">Modulo samsung j7 Prime</h4>
-                <p class="montserrat">$8000</p>
-                <a href="#" class="btn button2 btn-outline-success">Comprar</a><a href="#" class="btn btn-outline-dark">Agregar al
-                  carrito</a>
+          <div class="card mt-2 col-11 align-items-center col-md-6 col-xl-3 ">
+            <img src="./img/modulo-j7.png" class="card-img-top card-img-height" alt="repuesto modulo j7 prime">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h4 class="card-title roboto">Modulo samsung j7 Prime</h4>
+              <p class="montserrat">$8000</p>
+              <div class="modal fade" id="ml-moduloj7" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title fs-5 roboto d-flex justify-content-center" id="ml-moduloj7">
+                        Pantalla samsung j7 prime
+                      </h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="input-group mb-3">
+                        <span class="input-group-text roboto" id="inputGroup-sizing-sm">Nombre</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-sm" placeholder="Tu nombre">
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text roboto" id="inputGroup-sizing-sm">Apellido</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-sm" placeholder="Tu apellido">
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text roboto" id="inputGroup-sizing-sm">Email</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-sm" placeholder="nombre@ejemplo.com">
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text roboto" id="inputGroup-sizing-sm">Direccion</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-sm" placeholder="Direccion">
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text roboto" id="inputGroup-sizing-sm">Ciudad</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-sm" placeholder="Ciudad">
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text roboto" id="inputGroup-sizing-sm">cp</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-sm" placeholder="Codigo postal">
+                      </div>
+
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-success roboto" data-bs-target="#ml-moduloj7-2"
+                        data-bs-toggle="modal">Checkout</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-
-            <div class="card mt-2 col-12 col-md-6 col-xl-3">
-              <img src="./img/modulo-s23.png" class="card-img-top card-img-height" alt="repuesto modulo samsung s23">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h4 class="card-title roboto">Pantalla samsung s23</h4>
-                <p class="card-text montserrat">$23.000</p>
-                <a href="#" class="btn button2 btn-outline-success">Comprar</a><a href="#" class="btn btn-outline-dark">Agregar al
-                  carrito</a>
-
+              <div class="modal fade" id="ml-moduloj7-2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+                tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title fs-5 roboto" id="exampleModalToggleLabel2">¡Ultimo
+                        paso!
+                      </h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body container">
+                      <div class="input-group mb-3 ">
+                        <span class="input-group-text roboto" id="inputGroup-sizing-sm">Nº
+                          Tarjeta</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-sm" placeholder="1234-5678-9123-4567">
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text roboto" id="inputGroup-sizing-sm">Nombre
+                          titular</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-sm" placeholder="Tu nombre">
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text roboto" id="inputGroup-sizing-sm">Fecha
+                          vencimiento</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-sm" placeholder="12/2030">
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text roboto" id="inputGroup-sizing-sm">Codigo
+                          de
+                          seguridad</span>
+                        <input type="text" class="form-control" aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-sm" placeholder="123">
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-secondary roboto" data-bs-target="#ml-moduloj7"
+                        data-bs-toggle="modal">Volver
+                        atras</button>
+                      <button class="btn btn-warning roboto" data-bs-target="#ml-moduloj7-3"
+                        data-bs-toggle="modal">Confirmar</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-
-            <div class="card mt-2 col-12 col-md-6 col-xl-3">
-              <img src="./img/bat-iphone12.png" class="card-img-top img-w  mt-xl-2" alt="repuesto bateria iphone 12">
-              <div class="card-body d-flex flex-column align-items-center ">
-                <h4 class="card-title roboto">Bateria iphone 12</h4>
-                <p class="card-text mt-xl-4 montserrat">$7500</p>
-                <a href="#" class="btn button2 btn-outline-success ">Comprar</a><a href="#" class="btn btn-outline-dark">Agregar al
-                  carrito</a>
+              <div class="modal fade text-center" id="ml-moduloj7-3" aria-labelledby="exampleModalToggleLabel2"
+                tabindex="-1" style="display: none;" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body montserrat">
+                      <p>¡LISTO!</p>
+                      <p>Muchas gracias por tu compra, en instantes te va a llegar un correo con toda la informacion
+                        detallada de tus productos y su codigo de seguimiento para que estes atento cuando llegue!
+                        <br>
+                        ¡Gracias por su compra! <br>
+                      <p class="roboto"> TECNOSTORE </p>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <button class="btn button2 btn-outline-success roboto" data-bs-target="#ml-moduloj7"
+                data-bs-toggle="modal">Comprar</button>
+              <button class="btn btn-outline-dark"> Agregar al carrito</button>
             </div>
+          </div>
 
-            <div class="card mt-2 col-12 col-md-6 col-xl-3">
-              <img src="./img/funda-moto-g100.png" class="card-img-top card-img-height m" alt="funda para moto g100">
-              <div class="card-body d-flex flex-column align-items-center">
-                <h4 class="card-title mt-xl-2 roboto">Funda moto g100</h4>
-                <p class="card-text mt-xl-4 montserrat">$1500</p>
-                <a href="#" class="btn button2 btn-outline-success">Comprar</a><a href="#" class="btn btn-outline-dark">Agregar al
-                  carrito</a>
-              </div>
+          <div class="card mt-2 col-11 col-md-6 col-xl-3">
+            <img src="./img/modulo-s23.png" class="card-img-top card-img-height" alt="repuesto modulo samsung s23">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h4 class="card-title roboto">Pantalla samsung s23</h4>
+              <p class="card-text montserrat">$23.000</p>
+              <button class="btn button2 btn-outline-success">Comprar</button>
+              <button class="btn btn-outline-dark">Agregar al carrito</button>
+
             </div>
+          </div>
 
-          </section>
-        </div>
+          <div class="card mt-2 col-11 col-md-6 col-xl-3">
+            <img src="./img/bat-iphone12.png" class="card-img-top img-w  mt-xl-2" alt="repuesto bateria iphone 12">
+            <div class="card-body d-flex flex-column align-items-center ">
+              <h4 class="card-title roboto">Bateria iphone 12</h4>
+              <p class="card-text mt-xl-4 montserrat">$7500</p>
+              <button class="btn button2 btn-outline-success">Comprar</button>
+              <button class="btn btn-outline-dark">Agregar al carrito</button>
+            </div>
+          </div>
+
+          <div class="card mt-2 col-11 col-md-6 col-xl-3">
+            <img src="./img/funda-moto-g100.png" class="card-img-top card-img-height m" alt="funda para moto g100">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h4 class="card-title mt-xl-2 roboto">Funda moto g100</h4>
+              <p class="card-text mt-xl-4 montserrat">$1500</p>
+              <button class="btn button2 btn-outline-success">Comprar</button>
+              <button class="btn btn-outline-dark">Agregar al carrito</button>
+            </div>
+          </div>
+
+        </section>
+      </div>
   </main>
 
 
@@ -157,12 +275,12 @@
         </button>
         <ul class="dropdown-menu col-10">
           <li><a class="montserrat dropdown-item d-flex justify-content-center align-items-center text-success"
-              href="https://chat.whatsapp.com/CDgI7VHGpdYJ4TPB4vObwj" target="_blank" ><i
+              href="https://chat.whatsapp.com/CDgI7VHGpdYJ4TPB4vObwj" target="_blank"><i
                 class="fa-brands fa-whatsapp"></i>Whatsapp</a></li>
           <li><a class="montserrat dropdown-item d-flex justify-content-center align-items-center text-primary"
               href="https://www.facebook.com/TecnoStoreFans/?locale=es_LA" target="_blank"><i
                 class="fa-brands fa-facebook"></i>Facebook</a></li>
-          <li><a class="montserrat dropdown-item d-flex justify-content-center align-items-center instagram"
+          <li><a class="montserrat dropdown-item d-flex justify-content-center align-items-center violeta"
               href="https://www.instagram.com/tecnostorearg/?hl=es" target="_blank"><i
                 class="fa-brands fa-instagram"></i>Instagram</a></li>
         </ul>
@@ -175,25 +293,37 @@
         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
-  
-  <hr>
-  <div class="d-none d-xl-flex justify-content-xl-around mt-5 align-items-xl-center">
-    <section>
-      <h2 class="fs-1 roboto">Contacto</h2>
-      <ul class="list-group list-group-flush ">
-        <li class="button2 montserrat list-group-item d-xl-flex justify-content-xl-center align-items-xl-center text-success"><a class="dropdown-item d-flex justify-content-center align-items-center text-success"
-          href="https://chat.whatsapp.com/CDgI7VHGpdYJ4TPB4vObwj" target="_blank" ><i class="fa-brands fa-whatsapp"></i>Whatsapp </a></li>
-        <li class="button2 montserrat list-group-item d-xl-flex justify-content-xl-center align-items-xl-center text-primary"><a class="dropdown-item d-flex justify-content-center align-items-center text-primary"
-          href="https://www.facebook.com/TecnoStoreFans/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook </a></li>
-        <li class="button2 montserrat list-group-item d-xl-flex justify-content-xl-center align-items-xl-center violeta"><a class="dropdown-item d-flex justify-content-center align-items-center instagram"
-          href="https://www.instagram.com/tecnostorearg/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram </a></li>
-      </ul>
-    </section>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.954313030074!2d-58.47834262500558!3d-34.58002255624585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb66de733e8d7%3A0xf75ad5afdb424583!2sTecnoStore!5e0!3m2!1ses!2sar!4v1684099207453!5m2!1ses!2sar"
-      width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
+
+    <hr>
+    <div class="d-none d-xl-flex justify-content-xl-around mt-5 align-items-xl-center">
+      <section>
+        <h3 class="fs-1 roboto">Contacto</h3>
+        <ul class="list-group list-group-flush ">
+          <li
+            class="button2 montserrat list-group-item d-xl-flex justify-content-xl-center align-items-xl-center text-success">
+            <a class="dropdown-item d-flex justify-content-center align-items-center text-success"
+              href="https://chat.whatsapp.com/CDgI7VHGpdYJ4TPB4vObwj" target="_blank"><i
+                class="fa-brands fa-whatsapp"></i>Whatsapp </a>
+          </li>
+          <li
+            class="button2 montserrat list-group-item d-xl-flex justify-content-xl-center align-items-xl-center text-primary">
+            <a class="dropdown-item d-flex justify-content-center align-items-center text-primary"
+              href="https://www.facebook.com/TecnoStoreFans/?locale=es_LA" target="_blank"><i
+                class="fa-brands fa-facebook"></i>Facebook </a>
+          </li>
+          <li
+            class="button2 montserrat list-group-item d-xl-flex justify-content-xl-center align-items-xl-center violeta">
+            <a class="dropdown-item d-flex justify-content-center align-items-center violeta"
+              href="https://www.instagram.com/tecnostorearg/?hl=es" target="_blank"><i
+                class="fa-brands fa-instagram"></i>Instagram </a>
+          </li>
+        </ul>
+      </section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.954313030074!2d-58.47834262500558!3d-34.58002255624585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb66de733e8d7%3A0xf75ad5afdb424583!2sTecnoStore!5e0!3m2!1ses!2sar!4v1684099207453!5m2!1ses!2sar"
+        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </footer>
   <hr>
   <p class=" mt-5 d-flex justify-content-center">Pagina diseñada para el curso de desarrollo web de CoderHouse </p>
