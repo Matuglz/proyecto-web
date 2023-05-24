@@ -1,55 +1,63 @@
- 
-.violeta{
+.violeta {
   color: blueviolet;
 }
 
-.black{
+.black {
   color: black;
 }
 
-.carousel-caption{
+.carousel-caption {
   background-color: rgba(220, 220, 220, 0.514);
   border-radius: 3px;
 }
 
-body{
-  background-color:#d8b570;
+body {
+  background-color: #d8b570;
 }
 
-.card{
-  background-color:#E8D58B;
+.card {
+  background-color: #E8D58B;
 }
 
-.button1{
+.button1 {
   background-color: #F8F4A6;
 }
 
-.button2{
-  background-color:#d8b570;
+.button2 {
+  background-color: #d8b570;
 }
 
-.bg-carousel{
-  background-color:#fffffecc;
+.bg-carousel {
+  background-color: rgba(255, 255, 254, 0.8);
 }
 
-.montserrat{
-  font-family: 'Montserrat', sans-serif;
-  
+.montserrat {
+  font-family: "Montserrat", sans-serif;
 }
 
-.roboto{
-  font-family: 'Roboto', sans-serif;
+.roboto {
+  font-family: "Roboto", sans-serif;
 }
 
-@media (min-width:992px){
-  .list-nav{
-  background-color:#F8F4A6;
-  border-radius: 5px;}
-.alto{ height: 450px;}
-.fs{font-size: 2rem;}
+@media (min-width: 992px) {
+  .list-nav {
+    background-color: #F8F4A6;
+    border-radius: 5px;
+  }
+  .alto {
+    height: 450px;
+}
+  .fs {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .fs-chico {
+    font-size: 0.8rem;
+  }
+  .fs-chico2 {
+    font-size: 0.6rem;
+  }
 }
 
-@media (max-width:400px){
-  .fs-chico{font-size: 0.8rem;}
-  .fs-chico2{font-size: 0.6rem;}
-}
+/*# sourceMappingURL=styles.css.map */
