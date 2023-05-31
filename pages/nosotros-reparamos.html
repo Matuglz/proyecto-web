@@ -2,186 +2,197 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
-    <script src="https://kit.fontawesome.com/53a5609ba1.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-------------------------------------------BOOTSTRAP---------------------------------------------------------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!----------------------------------------------CSS------------------------------------------------------------------->
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-------------------------------------------FONT AWESOME------------------------------------------------------------->
+  <script src="https://kit.fontawesome.com/53a5609ba1.js" crossorigin="anonymous"></script>
+  <!-------------------------------------------GOOGLE FONTS------------------------------------------------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a href="../index.html"><img src="../img/logo-sin-fondo.png" alt="Logo de tecnostore" class="Logo"></a>
-                <a class="navbar-brand" href="../index.html">
-                    <h1 class="roboto d-xl-none d-lg-none">
-                        TecnoStore</h1>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-center d-xl-flex justify-content-xl-center"
-                    id="navbarNav">
-                    <ul class="navbar-nav roboto gap-lg-3">
-                        <li class="nav-item d-flex justify-content-center list-nav">
-                            <a class="nav-link" href="./celulares.html">Celulares</a>
-                        </li>
-                        <li class="nav-item d-flex justify-content-center list-nav">
-                            <a class="nav-link">Tablets</a>
-                        </li>
-                        <li class="nav-item d-flex justify-content-center list-nav">
-                            <a class="nav-link">Computadoras</a>
-                        </li>
-                        <li class="nav-item d-flex justify-content-center list-nav">
-                            <a class="nav-link" href="./nosotros-reparamos.html">¡Nosotros reparamos!</a>
-                        </li>
-                        <li class="nav-item d-flex justify-content-center list-nav">
-                            <a class="nav-link" href="./como-comprar.html">¿Como comprar?</a>
-                        </li>
-                        <li class="nav-item d-flex justify-content-center list-nav d-lg-none">
-                            <a class="nav-link"><button type="button" class="me-4 btn button1 btn-outline-dark position-relative">
-                              <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                              <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-                              </span>
-                            </button></a>
-                          </li>
-                    </ul>
-                </div>
-            </div>
-            <button type="button" class="me-4 btn button1 btn-outline-dark position-relative d-none d-lg-block">
-                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-                </span>
-              </button>
-        </nav>
-    </header>
-    <main>
- <h2 class="roboto my-5 d-flex justify-content-center">¡Nosotros reparamos!</h2>
-<section class="container">
-  <div class="row justify-content-center gap-2 gap-xl-0 mt-xl-5">
-    <div class="card col-5 col-xl-3">
-      <img src="../img/envio.jpg" class="img-fluid" alt="primer paso,envio o recepcion">
-      <div class="card-body">
-        <h3 class="card-title roboto">Envio & recepcion </h3>
-        <p class="card-text montserrat">Envianos o trae tu celular, tablet o computadora a TecnoStore.</p>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a href="../index.html"><img src="../img/logo-sin-fondo.png" alt="Logo de tecnostore" class="Logo"></a>
+        <a class="navbar-brand" href="../index.html">
+          <!----------------------------------H1----------------------------------->
+          <h1 class="roboto d-xl-none d-lg-none">TecnoStore</h1>
+        </a>
+        <!----------------------------MENU HAMBURGUESA------------------------------------>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!----------------------------------LISTA DE LA NAV----------------------------------->
+        <div class="collapse navbar-collapse d-lg-flex justify-content-lg-center d-xl-flex justify-content-xl-center"
+          id="navbarNav">
+          <ul class="navbar-nav roboto gap-lg-3">
+            <li class="nav-item d-flex justify-content-center list-nav">
+              <a class="nav-link" href="./celulares.html">Celulares</a>
+            </li>
+            <li class="nav-item d-flex justify-content-center list-nav">
+              <a class="nav-link">Tablets</a>
+            </li>
+            <li class="nav-item d-flex justify-content-center list-nav">
+              <a class="nav-link">Computadoras</a>
+            </li>
+            <li class="nav-item d-flex justify-content-center list-nav">
+              <a class="nav-link" href="./nosotros-reparamos.html">¡Nosotros reparamos!</a>
+            </li>
+            <li class="nav-item d-flex justify-content-center list-nav">
+              <a class="nav-link" href="./como-comprar.html">¿Como comprar?</a>
+            </li>
+            <li class="nav-item d-flex justify-content-center list-nav d-lg-none">
+              <a class="nav-link"><button type="button" class="me-4 btn button1 btn-outline-dark position-relative">
+                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                  </span>
+                </button></a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="card col-5 col-xl-3">
-      <img src="../img/cotizacion.avif" class="img-fluid"  alt="segundo paso, cotizacion">
-      <div class="card-body">
-        <h2 class="card-title roboto">Cotizacion</h2>
-        <p class="card-text montserrat">Revisamos tu dispositivo en el dia y ¡Te lo cotizamos sin costo!</p>
-      </div>
-    </div>
-    <div class="card col-5 col-xl-3">
-      <img src="../img/reparacion.webp" class="card-img-top" alt="tercer paso, reparacion">
-      <div class="card-body">
-        <h3 class="card-title roboto">Reparacion</h3>
-        <p class="card-text montserrat">Una vez aceptado el presupusto te reparamos tu dispositivo ¡En 24hs!</p>
-      </div>
-    </div>
-    <div class="card col-5 col-xl-3">
-      <img src="../img/entrega.jpg" class="card-img-top" alt="cuanto paso, entregas">
-      <div class="card-body">
-        <h3 class="card-title roboto">Entrega</h3>
-        <p class="card-text montserrat">Ya podes pasar a retirar tu dispositivo o te lo enviamos a tu domicilio con nuestras motos (costo adicional)</p>
-      </div>
-    </div>
-    <div class="card col-5 mt-xl-4">
-      <div class="card-body">
-        <h3 class="card-title roboto">Garantia</h3>
-        <p class="card-text montserrat">Reparaciones de celulares: 30 dias. <br>
-          Reparaciones de tablets: 20 dias. <br>
-          Reparaciones de televisores: 120 dias.</p>
-      </div>
-    </div>
-    <div class="card col-5 mt-xl-4">
-      <div class="card-body">
-        <h3 class="card-title roboto">Descargo de responsabilidad</h3>
-        <p class="card-text montserrat">Enviar siempre el celular sin tarjeta sim, micro sd o fundas. <br>
-          No nos hacemos responsables por roturas a la hora de el envio</p>
-      </div>
-    </div>
-  </div>
-</section>
-    </main>
-    
-    <footer>
-        <section class=" d-xl-none">
-          <div class="dropdown container">
-            <button class="btn button1 roboto dropdown-toggle col-12 mt-5" type="button" data-bs-toggle="dropdown"
-              aria-expanded="false"><i class="fa-solid fa-phone"></i>
-              Contacto
-            </button>
-            <ul class="dropdown-menu col-10">
-              <li><a class="montserrat dropdown-item d-flex justify-content-center align-items-center text-success"
-                  href="https://chat.whatsapp.com/CDgI7VHGpdYJ4TPB4vObwj" target="_blank"><i
-                    class="fa-brands fa-whatsapp"></i>Whatsapp</a></li>
-              <li><a class="montserrat dropdown-item d-flex justify-content-center align-items-center text-primary"
-                  href="https://www.facebook.com/TecnoStoreFans/?locale=es_LA" target="_blank"><i
-                    class="fa-brands fa-facebook"></i>Facebook</a></li>
-              <li><a class="montserrat dropdown-item d-flex justify-content-center align-items-center violeta"
-                  href="https://www.instagram.com/tecnostorearg/?hl=es" target="_blank"><i
-                    class="fa-brands fa-instagram"></i>Instagram</a></li>
-            </ul>
+      <!----------------------------------CARRITO SCREEN>1200PX----------------------------------->
+      <button type="button" class="me-4 btn button1 btn-outline-dark position-relative d-none d-lg-block">
+        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+        <span
+          class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+        </span>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <!----------------------------------SECCION NOSOTROS REPARAMOS----------------------------------->
+    <h2 class="roboto my-5 d-flex justify-content-center">¡Nosotros reparamos!</h2>
+    <section class="container">
+      <div class="row justify-content-center gap-2 gap-xl-0 mt-xl-5">
+        <div class="card col-5 col-xl-3">
+          <img src="../img/envio.jpg" class="img-fluid" alt="primer paso,envio o recepcion">
+          <div class="card-body">
+            <h3 class="card-title roboto">Envio & recepcion </h3>
+            <p class="card-text montserrat">Envianos o trae tu celular, tablet o computadora a TecnoStore.</p>
           </div>
-    
-        </section>
-        <div class="container_fluid d-xl-none">
-          <iframe class="maps mt-5 col-12"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9543130300544!2d-58.47834262477279!3d-34.58002255624634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb66de733e8d7%3A0xf75ad5afdb424583!2sTecnoStore!5e0!3m2!1ses!2sar!4v1682092455014!5m2!1ses!2sar"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    
-    
-        <hr>
-        <div class="d-none d-xl-flex justify-content-xl-around mt-5 align-items-xl-center">
-          <section>
-            <h3 class="fs-1 roboto">Contacto</h3>
-            <ul class="list-group list-group-flush ">
-              <li
-                class="button2 montserrat list-group-item d-xl-flex justify-content-xl-center align-items-xl-center text-success">
-                <a class="dropdown-item d-flex justify-content-center align-items-center text-success"
-                  href="https://chat.whatsapp.com/CDgI7VHGpdYJ4TPB4vObwj" target="_blank"><i
-                    class="fa-brands fa-whatsapp"></i>Whatsapp </a>
-              </li>
-              <li
-                class="button2 montserrat list-group-item d-xl-flex justify-content-xl-center align-items-xl-center text-primary">
-                <a class="dropdown-item d-flex justify-content-center align-items-center text-primary"
-                  href="https://www.facebook.com/TecnoStoreFans/?locale=es_LA" target="_blank"><i
-                    class="fa-brands fa-facebook"></i>Facebook </a>
-              </li>
-              <li
-                class="button2 montserrat list-group-item d-xl-flex justify-content-xl-center align-items-xl-center violeta">
-                <a class="dropdown-item d-flex justify-content-center align-items-center violeta"
-                  href="https://www.instagram.com/tecnostorearg/?hl=es" target="_blank"><i
-                    class="fa-brands fa-instagram"></i>Instagram </a>
-              </li>
-            </ul>
-          </section>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.954313030074!2d-58.47834262500558!3d-34.58002255624585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb66de733e8d7%3A0xf75ad5afdb424583!2sTecnoStore!5e0!3m2!1ses!2sar!4v1684099207453!5m2!1ses!2sar"
-            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="card col-5 col-xl-3">
+          <img src="../img/cotizacion.avif" class="img-fluid" alt="segundo paso, cotizacion">
+          <div class="card-body">
+            <h2 class="card-title roboto">Cotizacion</h2>
+            <p class="card-text montserrat">Revisamos tu dispositivo en el dia y ¡Te lo cotizamos sin costo!</p>
+          </div>
         </div>
-      </footer>
-      <hr>
-      <p class=" mt-5 d-flex justify-content-center">Pagina diseñada para el curso de desarrollo web de CoderHouse </p>
-      <p class="d-flex justify-content-center"> Derechos de autor a Matias Gonzalez</p>
-    
-    
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-    </body>
+        <div class="card col-5 col-xl-3">
+          <img src="../img/reparacion.webp" class="card-img-top" alt="tercer paso, reparacion">
+          <div class="card-body">
+            <h3 class="card-title roboto">Reparacion</h3>
+            <p class="card-text montserrat">Una vez aceptado el presupusto te reparamos tu dispositivo ¡En 24hs!</p>
+          </div>
+        </div>
+        <div class="card col-5 col-xl-3">
+          <img src="../img/entrega.jpg" class="card-img-top" alt="cuanto paso, entregas">
+          <div class="card-body">
+            <h3 class="card-title roboto">Entrega</h3>
+            <p class="card-text montserrat">Ya podes pasar a retirar tu dispositivo o te lo enviamos a tu domicilio con
+              nuestras motos (costo adicional)</p>
+          </div>
+        </div>
+        <div class="card col-5 mt-xl-4">
+          <div class="card-body">
+            <h3 class="card-title roboto">Garantia</h3>
+            <p class="card-text montserrat">Reparaciones de celulares: 30 dias. <br>
+              Reparaciones de tablets: 20 dias. <br>
+              Reparaciones de televisores: 120 dias.</p>
+          </div>
+        </div>
+        <div class="card col-5 mt-xl-4">
+          <div class="card-body">
+            <h3 class="card-title roboto">Descargo de responsabilidad</h3>
+            <p class="card-text montserrat">Enviar siempre el celular sin tarjeta sim, micro sd o fundas. <br>
+              No nos hacemos responsables por roturas a la hora de el envio</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!----------------------------------FOOTER----------------------------------->
+  <footer>
+    <!--------------------------------FOOTER SCREEN<1200PX----------------------------------->
+    <section class=" d-xl-none">
+      <div class="dropdown container">
+        <button class="btn button1 roboto dropdown-toggle col-12 mt-5" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false"><i class="fa-solid fa-phone"></i>
+          Contacto
+        </button>
+        <ul class="dropdown-menu col-10">
+          <li><a class="montserrat dropdown-item d-flex justify-content-center align-items-center text-success"
+              href="https://chat.whatsapp.com/CDgI7VHGpdYJ4TPB4vObwj" target="_blank"><i
+                class="fa-brands fa-whatsapp"></i>Whatsapp</a></li>
+          <li><a class="montserrat dropdown-item d-flex justify-content-center align-items-center text-primary"
+              href="https://www.facebook.com/TecnoStoreFans/?locale=es_LA" target="_blank"><i
+                class="fa-brands fa-facebook"></i>Facebook</a></li>
+          <li><a class="montserrat dropdown-item d-flex justify-content-center align-items-center violeta"
+              href="https://www.instagram.com/tecnostorearg/?hl=es" target="_blank"><i
+                class="fa-brands fa-instagram"></i>Instagram</a></li>
+        </ul>
+      </div>
+
+    </section>
+    <div class="container_fluid d-xl-none">
+      <iframe class="maps mt-5 col-12"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9543130300544!2d-58.47834262477279!3d-34.58002255624634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb66de733e8d7%3A0xf75ad5afdb424583!2sTecnoStore!5e0!3m2!1ses!2sar!4v1682092455014!5m2!1ses!2sar"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!----------------------------------FOOTER SCREEN>1200PX----------------------------------->
+
+    <hr>
+    <div class="d-none d-xl-flex justify-content-xl-around mt-5 align-items-xl-center">
+      <section>
+        <h3 class="fs-1 roboto">Contacto</h3>
+        <ul class="list-group list-group-flush ">
+          <li
+            class="button2 montserrat list-group-item d-xl-flex justify-content-xl-center align-items-xl-center text-success">
+            <a class="dropdown-item d-flex justify-content-center align-items-center text-success"
+              href="https://chat.whatsapp.com/CDgI7VHGpdYJ4TPB4vObwj" target="_blank"><i
+                class="fa-brands fa-whatsapp"></i>Whatsapp </a>
+          </li>
+          <li
+            class="button2 montserrat list-group-item d-xl-flex justify-content-xl-center align-items-xl-center text-primary">
+            <a class="dropdown-item d-flex justify-content-center align-items-center text-primary"
+              href="https://www.facebook.com/TecnoStoreFans/?locale=es_LA" target="_blank"><i
+                class="fa-brands fa-facebook"></i>Facebook </a>
+          </li>
+          <li
+            class="button2 montserrat list-group-item d-xl-flex justify-content-xl-center align-items-xl-center violeta">
+            <a class="dropdown-item d-flex justify-content-center align-items-center violeta"
+              href="https://www.instagram.com/tecnostorearg/?hl=es" target="_blank"><i
+                class="fa-brands fa-instagram"></i>Instagram </a>
+          </li>
+        </ul>
+      </section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.954313030074!2d-58.47834262500558!3d-34.58002255624585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb66de733e8d7%3A0xf75ad5afdb424583!2sTecnoStore!5e0!3m2!1ses!2sar!4v1684099207453!5m2!1ses!2sar"
+        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+  <hr>
+  <p class=" mt-5 d-flex justify-content-center">Pagina diseñada para el curso de desarrollo web de CoderHouse </p>
+  <p class="d-flex justify-content-center"> Derechos de autor a Matias Gonzalez</p>
+
+  <!----------------------------------SCRIPT BOOTSTRAP----------------------------------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
 
 </html>
