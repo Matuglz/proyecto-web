@@ -6,11 +6,6 @@
   color: black;
 }
 
-.carousel-caption {
-  background-color: rgba(220, 220, 220, 0.514);
-  border-radius: 3px;
-}
-
 body {
   background-color: #d8b570;
 }
@@ -46,7 +41,7 @@ body {
   }
   .alto {
     height: 450px;
-}
+  }
   .fs {
     font-size: 2rem;
   }
@@ -58,6 +53,17 @@ body {
   .fs-chico2 {
     font-size: 0.6rem;
   }
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.carousel-caption:hover {
+  transform: scale(1.1);
+}
+
+a img {
+  filter: drop-shadow(10px 2px 5px #9E2C2C);
 }
 
 /*# sourceMappingURL=styles.css.map */

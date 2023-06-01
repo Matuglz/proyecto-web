@@ -1,0 +1,37 @@
+@import "../components/colorsAndFonts";
+ .violeta{
+    color:$colorIg;
+  }
+  
+  .black{
+    color:$colorLinks;
+  }
+  
+  body{
+    background-color:$colorBody;
+  }
+  
+  .card{
+    background-color:$colorCard;
+  }
+  
+  .button1{
+    background-color: $colorButton1;
+  }
+  
+  .button2{
+    background-color:$colorBody;
+  }
+  
+  .bg-carousel{
+    background-color:$colorCarousel;
+  }
+  
+  .montserrat{
+    font-family:$montserrat
+    
+  }
+  
+  .roboto{
+    font-family:$Roboto
+  }
