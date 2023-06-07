@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <!-------------------------------------------BOOTSTRAP---------------------------------------------------------------->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -18,6 +17,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&display=swap"
         rel="stylesheet">
+    <!----------------------------------------------AOS------------------------------------------------------------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!---------------------------------------------META TAGS-------------------------------------------------------------->
+    <title>Cursos y capacitaciones para tecnicos de celulares</title>
+    <meta name="title" content="Cursos y capacitaciones para tecnicos de celulares">
+    <meta name="description"
+        content="Aprende a reparar celulares con herramientas altisima calidad y capacitate para poder relizar manufactura de glass y microelectronica con lo ultimo del mercado! | TECNOSTORE">
 </head>
 
 <body>
@@ -26,15 +32,15 @@
             <div class="container">
                 <a href="../index.html"><img src="../img/logo-sin-fondo.png" alt="Logo de tecnostore" class="Logo"></a>
                 <a class="navbar-brand" href="../index.html">
-                     <!----------------------------------H1----------------------------------->
+                    <!----------------------------------H1----------------------------------->
                     <h1 class="roboto d-xl-none d-lg-none">TecnoStore</h1>
                 </a>
-                 <!----------------------------------MENU HAMBURGUESA----------------------------------->
+                <!----------------------------------MENU HAMBURGUESA----------------------------------->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                 <!----------------------------------LISTA DE LA NAV----------------------------------->
+                <!----------------------------------LISTA DE LA NAV----------------------------------->
                 <div class="collapse navbar-collapse d-lg-flex justify-content-lg-center d-xl-flex justify-content-xl-center"
                     id="navbarNav">
                     <ul class="navbar-nav roboto gap-lg-3">
@@ -54,27 +60,30 @@
                             <a class="nav-link" href="./como-comprar.html">¿Como comprar?</a>
                         </li>
                         <li class="nav-item d-flex justify-content-center list-nav d-lg-none">
-                            <a class="nav-link"><button type="button" class="me-4 btn button1 btn-outline-dark position-relative">
-                              <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                              <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-                              </span>
-                            </button></a>
-                          </li>
+                            <a class="nav-link"><button type="button"
+                                    class="me-4 btn button1 btn-outline-dark position-relative">
+                                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                    </span>
+                                </button></a>
+                        </li>
                     </ul>
                 </div>
             </div>
-             <!----------------------------------CARRITO SCREEN<1200PX----------------------------------->
+            <!----------------------------------CARRITO SCREEN<1200PX----------------------------------->
             <button type="button" class="me-4 btn button1 btn-outline-dark position-relative d-none d-lg-block">
                 <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                <span
+                    class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
                 </span>
-              </button>
+            </button>
         </nav>
     </header>
     <main>
 
         <!--------------------------------------------SECCION CURSOS--------------------------------------->
-         <!----------------------------------CURSO REPARACION DE CELULARES----------------------------------->
+        <!----------------------------------CURSO REPARACION DE CELULARES----------------------------------->
         <section class="container mt-5">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center ">
                 <div class="col text-center ">
@@ -219,7 +228,7 @@
                     </div>
                 </div>
 
-            <!----------------------------------CURSE DE MANUFACTURA DE GLASS----------------------------------->
+                <!----------------------------------CURSE DE MANUFACTURA DE GLASS----------------------------------->
                 <div class="col text-center mt-3 mt-md-0">
                     <div class="card">
                         <img src="../img/manufactura-glass.jpeg" class="card-img-top"
@@ -362,7 +371,7 @@
                 </div>
 
 
-             <!----------------------------------CURSO DE MICROELECTRONICA----------------------------------->
+                <!----------------------------------CURSO DE MICROELECTRONICA----------------------------------->
 
                 <div class="col text-center mt-3 mt-lg-0">
                     <div class="card">
@@ -521,12 +530,14 @@
         <section>
 
             <h3 class="fs-2 d-flex justify-content-center mt-5">¿Como es nuestro laboratorio?</h3>
-            <div id="carouselExampleSlidesOnly" class="carousel slide p-5" data-bs-ride="carousel">
+            <div id="carouselExampleSlidesOnly" class="carousel slide p-5" data-bs-ride="carousel"
+                data-aos="zoom-in-right">
                 <div class="carousel-inner">
                     <div class="carousel-item active alto">
                         <img src="../img/taller1.jpg" class="d-block w-100" alt="como es el taller">
                         <div class="carousel-caption bg-carousel black mb-xl-5">
-                            <p class="montserrat fs-chico2 fs">las mejores herramientas para que no tengas ningun problema
+                            <p class="montserrat fs-chico2 fs">las mejores herramientas para que no tengas ningun
+                                problema
                                 a la hora de aprender junto con estaciones individuales!</p>
                         </div>
                     </div>
@@ -552,9 +563,9 @@
     </main>
 
     <hr>
- <!----------------------------------FOOTER----------------------------------->
+    <!----------------------------------FOOTER----------------------------------->
     <footer>
-<!----------------------------------FOOTER SCREEN<1200PX----------------------------------->
+        <!----------------------------------FOOTER SCREEN<1200PX----------------------------------->
         <section class=" d-xl-none">
             <div class="dropdown container">
                 <button class="btn roboto button1 dropdown-toggle col-12 mt-5" type="button" data-bs-toggle="dropdown"
@@ -585,10 +596,10 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
- <!----------------------------------FOOTER SCREEN>1200PX----------------------------------->
+        <!----------------------------------FOOTER SCREEN>1200PX----------------------------------->
 
-        <div
-            class="d-none d-sm-none d-lg-none d-md-none d-xl-flex justify-content-xl-around mt-xl-5 align-items-xl-center">
+        <div class="d-none d-sm-none d-lg-none d-md-none d-xl-flex justify-content-xl-around mt-xl-5 align-items-xl-center"
+            data-aos="zoom-in-right">
             <section>
                 <h3 class="fs-1 roboto">Contacto</h3>
                 <ul class="list-group list-group-flush">
@@ -617,10 +628,15 @@
 
     <p class=" mt-5 d-flex justify-content-center">Pagina diseñada para el curso de desarrollo web de CoderHouse </p>
     <p class="d-flex justify-content-center"> Derechos de autor a Matias Gonzalez</p>
- <!----------------------------------SCRIPT BOOTSTRAP----------------------------------->
+    <!----------------------------------SCRIPT BOOTSTRAP----------------------------------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+    <!-----------------------------------------AOS----------------------------------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 

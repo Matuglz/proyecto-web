@@ -36,32 +36,18 @@ body {
 
 .carousel-caption:hover {
   transform: scale(1.1);
+  transition-duration: 0.5s;
 }
 
 a img {
   filter: drop-shadow(10px 2px 5px rgba(136, 112, 47, 0.9058823529));
 }
 
-@media (min-width: 992px) {
-  .list-nav {
-    background-color: #F8F4A6;
-    border-radius: 5px;
-  }
-  .alto {
-    height: 450px;
-  }
-  .fs {
-    font-size: 2rem;
-  }
+.list-group-item:hover {
+  transform: scale(1.02);
+  transition-duration: 0.5s;
 }
-@media (max-width: 400px) {
-  .fs-chico {
-    font-size: 0.8rem;
-  }
-  .fs-chico2 {
-    font-size: 0.6rem;
-  }
-}
+
 @media (min-width: 992px) {
   .nav-link {
     cursor: pointer;
@@ -99,6 +85,28 @@ a img {
   .nav-link:hover:before, .nav-link:hover:after {
     width: 100%;
     height: 100%;
+  }
+}
+/*--carousel principal--*/
+@media (min-width: 992px) {
+  .list-nav {
+    background-color: #F8F4A6;
+    border-radius: 5px;
+  }
+  .alto {
+    height: 450px;
+  }
+  .fs {
+    font-size: 2rem;
+  }
+}
+/*--fuente carousel principal--*/
+@media (max-width: 400px) {
+  .fs-chico {
+    font-size: 0.8rem;
+  }
+  .fs-chico2 {
+    font-size: 0.6rem;
   }
 }
 
