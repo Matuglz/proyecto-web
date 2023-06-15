@@ -108,6 +108,9 @@ a img {
   .fs-chico2 {
     font-size: 0.6rem;
   }
+  h1 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
